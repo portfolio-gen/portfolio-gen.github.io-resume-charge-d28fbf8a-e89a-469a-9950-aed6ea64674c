@@ -1,0 +1,133 @@
+# Site
+# repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+# Content configuration version
+version: 2
+
+# Personal info
+name: "James Doe"
+title: "My cool midgard website"
+email: "jdoe@gmail.com"
+
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+github_username: testgithub
+linkedin_username: testlinkedin
+
+
+# Additional icon links
+
+additional_links:
+
+- title: bitbucket
+  icon: fa-solid fa-link
+  url: https://stackoverflow.com/
+
+
+
+
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+
+about_profile_image: images/avatar.jpg
+
+
+about_content: "**I had an awesome career**
+
+This is some cool text"
+
+resume_pdf: assets/resume.pdf
+
+
+
+content:
+
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: left
+        border: weak
+        title: Discord Bot
+        description: "**Discord Bot built with python**"
+      - layout: left
+        border: weak
+        title: Tic Tac Toe
+        description: "* sadfasd\n* sadf\n* asdfa\n"
+
+
+
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: right
+        title: Amazon
+        sub_title: Senior Software Engineer
+        caption: September 2012 - March 2018
+        location: Toronto
+        description: "**fsafdasdf**\n\n# sdfasdfsa\n* sadfasd\n* sadf\n* asdfa\n"
+      - layout: right
+        title: Google
+        sub_title: QA Tester
+        caption: September 2005 - December 2018
+        location: Prague, Czech Republic
+        description: "Did some cool stuff"
+      - layout: right
+        title: company.co
+        sub_title: Some guy
+        caption: March2020 - present
+        location: Ottawa
+        description: "**this is markdown**\n\n\n\n*testing markdown*\n\n\n\n<u>markdowntestinaggadkldgjk;sdfgak;jasdfg</u>\n\n\n\n\\*\\*&&^\\&#$&(#()$&\\*&\\*()#$(&\\*\\<>\\<>>\\<\"\"\"\"\"\"\"\n\n\n\n\n\n\n\n\n\n\n\"\"\"''''''\"\"\"/sdf/asfgl;asfg;lasg;l'b'l;;'lzxbv'l;zxbl;'zxb{}{]\\[]\\[]\\_\\_+\\_"
+
+
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+
+      - layout: top-right
+        title: University of Ottawa
+        sub_title: B.ASc Software Engineering
+        caption: September 2017 - December 2021
+        description: "**Discrete** math was fun :)"
+      - layout: top-right
+        title: University of Ottawa - Telfer
+        sub_title: B.Comm
+        caption: January 2007 - May 2011
+        description: "**Let's get that bread**"
+
+
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
